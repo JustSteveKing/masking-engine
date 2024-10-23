@@ -3,8 +3,7 @@
 <!-- BADGES_START -->
 [![Latest Version][badge-release]][packagist]
 [![PHP Version][badge-php]][php]
-![tests](https://github.com/juststeveking/masking-engine/workflows/ci/badge.svg)
-[![Total Downloads][badge-downloads]][downloads]
+[![run-tests](https://github.com/JustSteveKing/masking-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/JustSteveKing/masking-engine/actions/workflows/ci.yml)[![Total Downloads][badge-downloads]][downloads]
 
 [badge-release]: https://img.shields.io/packagist/v/juststeveking/masking-engine.svg?style=flat-square&label=release
 [badge-php]: https://img.shields.io/packagist/php-v/juststeveking/masking-engine.svg?style=flat-square

@@ -1,0 +1,77 @@
+{
+	"name": "juststeveking/masking-engine",
+	"description": "A data masking engine for PHP.",
+	"version": "0.0.1",
+	"type": "library",
+	"keywords": [],
+	"homepage": "https://github.com/juststeveking/masking-engine",
+	"readme": "README.md",
+	"license": "MIT",
+	"authors": [
+		{
+			"role": "Developer",
+			"name": "Steve McDougall",
+			"email": "juststevemcd@gmail.com",
+			"homepage": "https://juststeveking.link"
+		}
+	],
+	"funding": [
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/juststeveking"
+		}
+	],
+	"require": {
+		"php": "^8.3"
+	},
+	"require-dev": {
+		"laravel/pint": "^1.18",
+		"orchestra/testbench": "^9.5",
+		"pestphp/pest": "^3.5",
+		"phpstan/phpstan": "^1.12",
+		"phpstan/phpstan-strict-rules": "^1.6",
+		"roave/security-advisories": "dev-latest"
+	},
+	"autoload": {
+		"psr-4": {
+			"JustSteveKing\\Masking\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"JustSteveKing\\Masking\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		},
+		"preferred-install": {
+			"*": "dist"
+		},
+		"github-protocols": [
+			"git", "ssh", "https", "http"
+		],
+		"optimize-autoloader": true,
+		"sort-packages": true,
+		"classmap-authoritative": true,
+		"bump-after-update": true
+	},
+	"scripts": {
+		"lint": [
+			"./vendor/bin/pint --test"
+		],
+		"pint": [
+			"./vendor/bin/pint"
+		],
+		"stan": [
+			"./vendor/bin/phpstan analyse --memory-limit=3g"
+		],
+		"test": [
+			"./vendor/bin/pest"
+		]
+	},
+	"scripts-descriptions": {}
+}
